@@ -1,14 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }} · OneForce</title>
-  <link rel="stylesheet" href="/assets/style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ title }}</title>
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:image" content="/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta name="twitter:image" content="/assets/og-image.png" />
+<meta name="description" content="{{ description }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
-  <header><nav><a href="/">OneForce</a></nav></header>
-  <main>{{ content | safe }}</main>
-  <footer><p>&copy; OneForce</p></footer>
+{{ content | safe }}
+<script src="/assets/site.js"></script>
 </body>
 </html>
