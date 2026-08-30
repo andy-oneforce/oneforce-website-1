@@ -1,0 +1,12 @@
+{
+  "name": "oneforce-website-eleventy",
+  "version": "0.1.0",
+  "description": "OneForce marketing site — Eleventy rebuild",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

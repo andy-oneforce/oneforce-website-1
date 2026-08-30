@@ -1,0 +1,4 @@
+/* Placeholder stylesheet — brand colors/fonts pending (design questionnaire §1 unanswered) */
+body { font-family: system-ui, sans-serif; margin: 0; line-height: 1.5; }
+header nav { padding: 1rem; }
+main { padding: 1rem; max-width: 60rem; margin: 0 auto; }
