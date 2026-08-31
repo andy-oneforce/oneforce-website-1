@@ -296,6 +296,9 @@
     background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05), transparent 60%), var(--bg-2);
     border: 1px solid var(--glass-border);
   }
+  /* Talent Intelligence: visual box matches the text box's exact rendered size (not the shared aspect-ratio) */
+  #talent .feature { align-items: stretch; }
+  #talent .feature-visual { aspect-ratio: unset; height: 100%; }
 
   /* ---------- proof ---------- */
   .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
