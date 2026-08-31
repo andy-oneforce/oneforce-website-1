@@ -466,7 +466,7 @@
           <li>Competitor talent ranking for sourcing</li>
         </ul>
       </div>
-      <div class="feature-visual" id="visual-talent" aria-hidden="true"></div>
+      <div class="feature-visual" id="visual-talent" aria-hidden="true"><img src="assets/talent-intelligence.jpg" alt="Diagram of OneForce's talent intelligence hub connecting candidate identification, top-talent analysis, and competitor talent ranking across engineering, sales, marketing, and product" style="width:100%;height:100%;object-fit:cover;" /></div>
     </div>
   </div>
 </section>
@@ -618,25 +618,6 @@
     step();
     window.addEventListener('resize', function () { resize(); init(); if (reduceMotion) step(); });
   }
-
-  // ---------- feature visuals: static node motif (SVG) ----------
-  function nodeMotif(el, seed) {
-    if (!el) return;
-    var pts = seed === 1
-      ? [[20,30],[55,15],[85,35],[40,60],[70,70],[25,80]]
-      : [[15,20],[50,35],[80,15],[60,55],[30,65],[80,75]];
-    var lines = '';
-    for (var i = 0; i < pts.length - 1; i++) {
-      lines += '<line x1="' + pts[i][0] + '%" y1="' + pts[i][1] + '%" x2="' + pts[i+1][0] + '%" y2="' + pts[i+1][1] + '%" stroke="rgba(226,196,140,0.22)" stroke-width="1"/>';
-    }
-    var dots = pts.map(function (p, i) {
-      var r = i % 2 === 0 ? 4 : 2.4;
-      var op = i % 2 === 0 ? 0.9 : 0.5;
-      return '<circle cx="' + p[0] + '%" cy="' + p[1] + '%" r="' + r + '" fill="rgba(226,196,140,' + op + ')"/>';
-    }).join('');
-    el.innerHTML = '<svg width="100%" height="100%" style="position:absolute;inset:0;">' + lines + dots + '</svg>';
-  }
-  nodeMotif(document.getElementById('visual-talent'), 2);
 })();
 </script>
 </body>
